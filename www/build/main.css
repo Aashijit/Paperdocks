@@ -25695,3 +25695,101 @@ ion-navbar.toolbar {
   padding-bottom: 4px;
   min-height: 46px;
 }
+
+@font-face {
+  font-family: 'Paperdocks Font';
+  src: url("../assets/fonts/PoiretOne-Regular.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Typography starts */
+.font-poirot {
+  font-family: 'Paperdocks Font';
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
+}
+
+.fw-900 {
+  font-weight: 900 !important;
+}
+
+.captalize {
+  text-transform: capitalize !important;
+}
+
+/* Typography ends */
+/*color*/
+.text-primary {
+  color: #e3bd21 !important;
+}
+
+.text-info {
+  color: #3f3e3e !important;
+}
+
+.text-grey {
+  color: #aeaeae !important;
+}
+
+.text-peach {
+  color: #f9f0cd !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.back-primary {
+  background: #e3bd21 !important;
+}
+
+.back-info {
+  background: #3f3e3e !important;
+}
+
+.back-grey {
+  background: #aeaeae !important;
+}
+
+.back-peach {
+  background: #f9f0cd !important;
+}
+
+.back-white {
+  background: #fff !important;
+}
+
+.back-black {
+  background: #000 !important;
+}
+
+/*color*/
+page-dashboard .toolbar-title {
+  font-weight: 800 !important;
+}
+
+page-dashboard .segment-md .segment-button {
+  font-size: 87% !important;
+  color: #3f3e3e !important;
+  text-transform: capitalize !important;
+}
+
+page-dashboard .segment-md .segment-button.segment-activated {
+  opacity: 1;
+  border-color: #e3bd21;
+}
