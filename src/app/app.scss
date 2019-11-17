@@ -1,16 +1,30 @@
-// http://ionicframework.com/docs/theming/
-
-
 // App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+
+@import '../theme/fonts';
+
+/* Typography starts */ 
+.font-poirot{ font-family: 'Paperdocks Font';}
+.fw-600{ font-weight: 600 !important;}
+.fw-700{ font-weight: 700 !important;}
+.fw-800{ font-weight: 800 !important;}
+.fw-900{ font-weight: 900 !important;}
+.captalize{ text-transform: capitalize !important;}
+/* Typography ends */ 
+
+
+/*color*/
+.text-primary{color:#e3bd21 !important}
+.text-info{color:#3f3e3e !important}
+.text-grey{color:#aeaeae !important}
+.text-peach{color:#f9f0cd !important}
+.text-white{color:#fff !important}
+.text-black{color:#000 !important}
+
+
+.back-primary{background:#e3bd21 !important}
+.back-info{background:#3f3e3e !important}
+.back-grey{background:#aeaeae !important}
+.back-peach{background:#f9f0cd !important}
+.back-white{background:#fff !important}
+.back-black{background:#000 !important}
+/*color*/

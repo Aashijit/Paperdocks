@@ -1,17 +1,66 @@
 <ion-menu [content]="content" type="overlay">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <img src="../../assets/imgs/logo.png" style="width:76px; height:61px; margin-left : 35% !important;" />
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+      <button ion-item menuClose><img src="../assets/imgs/home.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+        font-size: 20px;" class="font-poirot text-black">Dashboard</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/shopping-bag.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+          font-size: 20px;" class="font-poirot text-black">Shopping Cart</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/delivery-truck.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+          font-size: 20px;" class="font-poirot text-black">Track Order</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/contact.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+        font-size: 20px;" class="font-poirot text-black">Contact Us</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/about-us.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+          font-size: 20px;" class="font-poirot text-black">About Us</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/digital-marketing.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+          font-size: 20px;" class="font-poirot text-black">Blog</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/help.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+            font-size: 20px;" class="font-poirot text-black">FAQs</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/terms-and-conditions.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+              font-size: 20px;" class="font-poirot text-black">Terms & Conditions</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/privacy-policy.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+              font-size: 20px;" class="font-poirot text-black">Privacy Policy</ion-note>
+      </button>
+      <button ion-item menuClose><img src="../assets/imgs/rss.svg" style="height:20px!important" />
+        <ion-note style="margin-left: 15%;
+              font-size: 20px;" class="font-poirot text-black">Subscribe</ion-note>
       </button>
     </ion-list>
   </ion-content>
+
+  <ion-footer class="back-primary">
+    <button ion-button clear>
+      <ion-icon name="logo-facebook" class="text-peach"></ion-icon>
+    </button>
+    <button ion-button clear>
+      <ion-icon name="logo-instagram" class="text-peach"></ion-icon>
+    </button>
+    <button ion-button clear>
+      <ion-icon name="mail" class="text-peach"></ion-icon>
+    </button>
+  </ion-footer>
 
 </ion-menu>
 
