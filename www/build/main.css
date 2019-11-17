@@ -25779,6 +25779,42 @@ ion-navbar.toolbar {
 }
 
 /*color*/
+/*margin*/
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-50 {
+  margin-top: 50px !important;
+}
+
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+.mt-70 {
+  margin-top: 70px !important;
+}
+
+/*margin*/
+/* Image Container*/
+.image-container {
+  min-width: 200px;
+  background-size: cover;
+}
+
 page-dashboard .toolbar-title {
   font-weight: 800 !important;
 }

@@ -14,9 +14,8 @@
       </button>
     </ion-buttons>
   </ion-toolbar>
-</ion-header>
 
-<ion-content>
+
   <div>
     <ion-segment [(ngModel)]="dashboardPageNames">
       <ion-segment-button value="home">
@@ -36,15 +35,54 @@
       </ion-segment-button>
     </ion-segment>
   </div>
+</ion-header>
+
+<ion-content>
+
 
   <div [ngSwitch]="dashboardPageNames">
     <ion-list *ngSwitchCase="'home'">
 
       <!--Banner starts-->
-      <img src="../../assets/imgs/no-image.png" style="width:100% !important; height:20% !important;" />
+      <img src="../../assets/imgs/no-image.png" style="height:20% !important; box-sizing: content-box !important;" />
       <!--Banner ends-->
 
+      <!-- Label starts-->
+      <ion-title class="font-poirot mt-10">Shop for</ion-title>
+      <!-- Label ends-->
 
+
+      <!-- Grid Starts -->
+      <div class = "row responsive-sm">
+        <div class = "col col-25">
+          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        </div>
+        <div class = "col">
+          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        </div>
+        <div class = "col">
+          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        </div>
+        
+        <div class = "col">
+          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        </div>
+        <div class = "col">
+          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        </div>
+     </div>
+     
+     <div class = "row responsive-sm">
+      <div class = "col">
+        <img src="../../assets/imgs/no-image.png" class="image-container"/>
+      </div>
+      <div class = "col">
+        <img src="../../assets/imgs/no-image.png" class="image-container"/>
+      </div>
+      <div class = "col">
+        <img src="../../assets/imgs/no-image.png" />
+      </div>
+     </div>
 
 
 
