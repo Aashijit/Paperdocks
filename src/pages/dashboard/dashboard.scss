@@ -1,6 +1,5 @@
 page-dashboard {
     .toolbar-title{ font-weight: 800 !important;}
-    .segment-md .segment-button { font-size:87% !important; color:#3f3e3e !important; text-transform: capitalize !important;}
-    .segment-md .segment-button.segment-activated { opacity: 1; border-color: #e3bd21;}
-    
+    .segment-md .segment-button { font-size:100% !important; color:#3f3e3e !important; text-transform: capitalize !important;}
+    .segment-md .segment-button.segment-activated { opacity: 1; border-color: #e3bd21 !important; border-bottom: 4px solid;}
 }

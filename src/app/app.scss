@@ -9,6 +9,11 @@
 .fw-800{ font-weight: 800 !important;}
 .fw-900{ font-weight: 900 !important;}
 .captalize{ text-transform: capitalize !important;}
+.text-justify{ text-align: justify !important;   text-justify: inter-word !important;}
+.pd-10{ padding: 10px !important}
+.pd-20{ padding: 20px !important}
+.pd-30{ padding: 30px !important}
+.pd-40{ padding: 40px !important}
 /* Typography ends */ 
 
 
@@ -41,6 +46,12 @@
 .mt-60{margin-top: 60px !important}
 .mt-70{margin-top: 70px !important}
 
+
+.m-10{ margin: 10px !important}
+.m-20{ margin: 20px !important}
+.m-30{ margin: 30px !important}
+.m-40{ margin: 40px !important}
+.m-50{ margin: 50px !important}
 /*margin*/
 
 
@@ -49,6 +60,7 @@
 
 /* Image Container*/
 .image-container {
-    min-width: 200px;
+    min-width: 320px !important;
+    max-width:520px !important;
     background-size: cover;
 }

@@ -25728,6 +25728,27 @@ ion-navbar.toolbar {
   text-transform: capitalize !important;
 }
 
+.text-justify {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+.pd-10 {
+  padding: 10px !important;
+}
+
+.pd-20 {
+  padding: 20px !important;
+}
+
+.pd-30 {
+  padding: 30px !important;
+}
+
+.pd-40 {
+  padding: 40px !important;
+}
+
 /* Typography ends */
 /*color*/
 .text-primary {
@@ -25808,10 +25829,31 @@ ion-navbar.toolbar {
   margin-top: 70px !important;
 }
 
+.m-10 {
+  margin: 10px !important;
+}
+
+.m-20 {
+  margin: 20px !important;
+}
+
+.m-30 {
+  margin: 30px !important;
+}
+
+.m-40 {
+  margin: 40px !important;
+}
+
+.m-50 {
+  margin: 50px !important;
+}
+
 /*margin*/
 /* Image Container*/
 .image-container {
-  min-width: 200px;
+  min-width: 320px !important;
+  max-width: 520px !important;
   background-size: cover;
 }
 
@@ -25820,12 +25862,13 @@ page-dashboard .toolbar-title {
 }
 
 page-dashboard .segment-md .segment-button {
-  font-size: 87% !important;
+  font-size: 100% !important;
   color: #3f3e3e !important;
   text-transform: capitalize !important;
 }
 
 page-dashboard .segment-md .segment-button.segment-activated {
   opacity: 1;
-  border-color: #e3bd21;
+  border-color: #e3bd21 !important;
+  border-bottom: 4px solid;
 }

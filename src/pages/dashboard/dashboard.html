@@ -30,9 +30,6 @@
       <ion-segment-button value="contactus">
         Contact Us
       </ion-segment-button>
-      <ion-segment-button value="blog">
-        Blog
-      </ion-segment-button>
     </ion-segment>
   </div>
 </ion-header>
@@ -44,7 +41,7 @@
     <ion-list *ngSwitchCase="'home'">
 
       <!--Banner starts-->
-      <img src="../../assets/imgs/no-image.png" style="height:20% !important; box-sizing: content-box !important;" />
+      <img src="../../assets/imgs/no-image.png" style="height:auto; width: 100% !important;" />
       <!--Banner ends-->
 
       <!-- Label starts-->
@@ -53,42 +50,118 @@
 
 
       <!-- Grid Starts -->
-      <div class = "row responsive-sm">
-        <div class = "col col-25">
-          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+      <div class="row">
+        <div class="col">
+          <ion-card class="image-container">
+            <ion-card-header>
+              <ion-title class="font-poirot">Birthday Cards</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="../../assets/imgs/no-image.png" />
+              <ion-note class="mt-20 text-justify">
+                This is the birthday cards you always want to send your friends, family, loved ones.
+              </ion-note>
+              <br/>
+              <button ion-button clear class="captalize font-poirot">Spread the love</button>
+            </ion-card-content>
+          </ion-card>
         </div>
-        <div class = "col">
-          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        <div class="col">
+          <ion-card class="image-container">
+            <ion-card-header>
+              <ion-title class="font-poirot">Thank You Cards</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="../../assets/imgs/no-image.png" />
+              <ion-note class="mt-20 text-justify">
+                This is the thank you cards you always want to send your friends, family, loved ones.
+              </ion-note>
+              <br/>
+              <button ion-button clear class="captalize font-poirot">Spread the love</button>
+            </ion-card-content>
+          </ion-card>
         </div>
-        <div class = "col">
-          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        <div class="col">
+          <ion-card class="image-container">
+            <ion-card-header>
+              <ion-title class="font-poirot">Special Occassions Cards</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="../../assets/imgs/no-image.png" />
+              <ion-note class="mt-20 text-justify">
+                This is the occassional cards you always want to send your friends, family, loved ones.
+              </ion-note>
+              <br/>
+              <button ion-button clear class="captalize font-poirot">Spread the love</button>
+            </ion-card-content>
+          </ion-card>
         </div>
-        
-        <div class = "col">
-          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        <div class="col">
+          <ion-card class="image-container">
+            <ion-card-header>
+              <ion-title class="font-poirot">Wall Posters</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="../../assets/imgs/no-image.png" />
+              <ion-note class="mt-20 text-justify">
+                Make your walls speak out to your friends, family and loved ones
+              </ion-note>
+              <br/>
+              <button ion-button clear class="captalize font-poirot">Spread the love</button>
+            </ion-card-content>
+          </ion-card>
         </div>
-        <div class = "col">
-          <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        <div class="col">
+          <ion-card class="image-container">
+            <ion-card-header>
+              <ion-title class="font-poirot">Square Posters</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="../../assets/imgs/no-image.png" />
+              <ion-note class="mt-20 text-justify">
+                Make your walls speak out to your friends, family and loved ones
+              </ion-note>
+              <br/>
+              <button ion-button clear class="captalize font-poirot">Spread the love</button>
+            </ion-card-content>
+          </ion-card>
         </div>
-     </div>
-     
-     <div class = "row responsive-sm">
-      <div class = "col">
-        <img src="../../assets/imgs/no-image.png" class="image-container"/>
+        <div class="col">
+          <ion-card class="image-container">
+            <ion-card-header>
+              <ion-title class="font-poirot">Frames</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="../../assets/imgs/no-image.png" />
+              <ion-note class="mt-20 text-justify">
+                Make those colourless walls speak out to your family,friends and relatives
+              </ion-note>
+              <br/>
+              <button ion-button clear class="captalize font-poirot">Spread the love</button>
+            </ion-card-content>
+          </ion-card>
+        </div>
       </div>
-      <div class = "col">
-        <img src="../../assets/imgs/no-image.png" class="image-container"/>
-      </div>
-      <div class = "col">
-        <img src="../../assets/imgs/no-image.png" />
-      </div>
-     </div>
-
+      <!-- Grid Endss -->
 
 
     </ion-list>
     <ion-list *ngSwitchCase="'cards'">
-      Cards
+      
+
+      <ion-item class="m-20">
+        <ion-label floating class="font-poirot fw-800">Your favourite cards ...</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+  
+      
+
+
+
+
+
+
+
     </ion-list>
     <ion-list *ngSwitchCase="'posters'">
       Posters
@@ -96,10 +169,6 @@
 
     <ion-list *ngSwitchCase="'contactus'">
       Contact Us
-    </ion-list>
-
-    <ion-list *ngSwitchCase="'blog'">
-      Blog
     </ion-list>
   </div>
 </ion-content>
