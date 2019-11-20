@@ -25853,7 +25853,7 @@ ion-navbar.toolbar {
 /* Image Container*/
 .image-container {
   min-width: 320px !important;
-  max-width: 520px !important;
+  max-width: 350px !important;
   background-size: cover;
 }
 
