@@ -178,17 +178,32 @@
     </ion-list>
     <ion-list *ngSwitchCase="'cards'">
       
-
-      <ion-item class="m-20">
-        <ion-label floating class="font-poirot fw-800">Your favourite cards ...</ion-label>
-        <ion-input></ion-input>
+      <ion-row>
+        <ion-col>
+      <ion-item>
+        <ion-label class="font-poirot" floating>Browse By</ion-label>
+        <ion-select  [selectOptions]="browseBy"> 
+          <ion-option value="c1" class="font-poirot">Category 1</ion-option>
+          <ion-option value="c2" class="font-poirot">Category 2</ion-option>
+          <ion-option value="c3" class="font-poirot">Category 3</ion-option>
+          <ion-option value="c4" class="font-poirot">Category 4</ion-option>
+          <ion-option value="c5" class="font-poirot">Category 5</ion-option>
+        </ion-select>
       </ion-item>
-  
+    </ion-col>
+    <ion-col>
+        <ion-item>
+          <ion-label class="font-poirot" floating>Sort By</ion-label>
+          <ion-select [selectOptions]="browseBy"> 
+            <ion-option value="sbn" class="font-poirot">Sort by name</ion-option>
+            <ion-option value="sbp" class="font-poirot">Sort by price</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row> 
       
 
-
-
-
+ 
 
 
 

@@ -25872,3 +25872,8 @@ page-dashboard .segment-md .segment-button.segment-activated {
   border-color: #e3bd21 !important;
   border-bottom: 4px solid;
 }
+
+page-dashboard .search-bar {
+  width: 70% !important;
+  margin-left: 20% !important;
+}

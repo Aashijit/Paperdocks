@@ -11,6 +11,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class DashboardPage {
   dashboardPageNames: any="home";
 
+  browseBy = {
+    title: 'Browse by',
+    subTitle: 'Please select one of the categories',
+    mode: 'ios',
+    interface: 'popover'
+  };
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
