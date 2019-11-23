@@ -10,6 +10,9 @@
     </ion-title>
     <ion-buttons end>
       <button ion-button icon-only>
+        <img src="../../assets/imgs/shopping-bag.svg" style="height: 80% !important; margin-right: 5px !important;" />
+      </button>
+      <button ion-button icon-only>
         <img src="../../assets/imgs/search.svg" style="height: 85% !important" />
       </button>
     </ion-buttons>
@@ -49,7 +52,7 @@
       <!-- Label ends-->
 
 
-      <!-- Grid Starts -->      
+      <!-- Grid Starts -->
       <ion-row>
         <ion-col class="image-container">
           <ion-card>
@@ -61,13 +64,13 @@
               <ion-note class="mt-20 text-justify">
                 This is the birthday cards you always want to send your friends, family, loved ones.
               </ion-note>
-              <br/>
+              <br />
               <button ion-button clear class="captalize font-poirot">Spread the love</button>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col class="image-container">
-          <ion-card >
+          <ion-card>
             <ion-card-header>
               <ion-title class="font-poirot">Thank You Cards</ion-title>
             </ion-card-header>
@@ -76,13 +79,13 @@
               <ion-note class="mt-20 text-justify">
                 This is the thank you cards you always want to send your friends, family, loved ones.
               </ion-note>
-              <br/>
+              <br />
               <button ion-button clear class="captalize font-poirot">Spread the love</button>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col class="image-container">
-          <ion-card >
+          <ion-card>
             <ion-card-header>
               <ion-title class="font-poirot">Special Occassions Cards</ion-title>
             </ion-card-header>
@@ -91,13 +94,13 @@
               <ion-note class="mt-20 text-justify">
                 This is the occassional cards you always want to send your friends, family, loved ones.
               </ion-note>
-              <br/>
+              <br />
               <button ion-button clear class="captalize font-poirot">Spread the love</button>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col class="image-container">
-          <ion-card >
+          <ion-card>
             <ion-card-header>
               <ion-title class="font-poirot">Wall Posters</ion-title>
             </ion-card-header>
@@ -106,13 +109,13 @@
               <ion-note class="mt-20 text-justify">
                 Make your walls speak out to your friends, family and loved ones
               </ion-note>
-              <br/>
+              <br />
               <button ion-button clear class="captalize font-poirot">Spread the love</button>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col class="image-container">
-          <ion-card >
+          <ion-card>
             <ion-card-header>
               <ion-title class="font-poirot">Square Posters</ion-title>
             </ion-card-header>
@@ -121,13 +124,13 @@
               <ion-note class="mt-20 text-justify">
                 Make your walls speak out to your friends, family and loved ones
               </ion-note>
-              <br/>
+              <br />
               <button ion-button clear class="captalize font-poirot">Spread the love</button>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col class="image-container">
-          <ion-card >
+          <ion-card>
             <ion-card-header>
               <ion-title class="font-poirot">Frames</ion-title>
             </ion-card-header>
@@ -136,13 +139,13 @@
               <ion-note class="mt-20 text-justify">
                 Make those colourless walls speak out to your family,friends and relatives
               </ion-note>
-              <br/>
+              <br />
               <button ion-button clear class="captalize font-poirot">Spread the love</button>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col class="image-container">
-          <ion-card >
+          <ion-card>
             <ion-card-header>
               <ion-title class="font-poirot">Multiple Frames</ion-title>
             </ion-card-header>
@@ -151,13 +154,13 @@
               <ion-note class="mt-20 text-justify">
                 Make those colourless walls speak out to your family,friends and relatives
               </ion-note>
-              <br/>
+              <br />
               <button ion-button clear class="captalize font-poirot">Spread the love</button>
             </ion-card-content>
           </ion-card>
         </ion-col>
         <ion-col class="image-container">
-          <ion-card >
+          <ion-card>
             <ion-card-header>
               <ion-title class="font-poirot">Minimalism</ion-title>
             </ion-card-header>
@@ -166,7 +169,7 @@
               <ion-note class="mt-20 text-justify">
                 Make those colourless walls speak out to your family,friends and relatives
               </ion-note>
-              <br/>
+              <br />
               <button ion-button clear class="captalize font-poirot">Spread the love</button>
             </ion-card-content>
           </ion-card>
@@ -177,9 +180,10 @@
 
     </ion-list>
     <ion-list *ngSwitchCase="'cards'">
-      
+
       <ion-row>
         <ion-col>
+<<<<<<< HEAD
       <ion-item>
         <ion-label class="font-poirot" floating>Browse By</ion-label>
         <ion-select  [selectOptions]="browseBy"> 
@@ -206,6 +210,32 @@
       
 
  
+=======
+          <ion-item>
+            <ion-label class="font-poirot" floating>Browse By</ion-label>
+            <ion-select [selectOptions]="browseBy">
+              <ion-option value="c1" class="font-poirot">Category 1</ion-option>
+              <ion-option value="c2" class="font-poirot">Category 2</ion-option>
+              <ion-option value="c3" class="font-poirot">Category 3</ion-option>
+              <ion-option value="c4" class="font-poirot">Category 4</ion-option>
+              <ion-option value="c5" class="font-poirot">Category 5</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label class="font-poirot" floating>Sort By</ion-label>
+            <ion-select [selectOptions]="browseBy">
+              <ion-option value="sbn" class="font-poirot">Sort by name</ion-option>
+              <ion-option value="sbp" class="font-poirot">Sort by price</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+>>>>>>> de4c624e43f504212a05e3808800120cf48a3bc8
 
 
 
