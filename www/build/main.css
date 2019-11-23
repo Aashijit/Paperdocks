@@ -25733,6 +25733,10 @@ ion-navbar.toolbar {
   text-justify: inter-word !important;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .pd-10 {
   padding: 10px !important;
 }
@@ -25773,6 +25777,10 @@ ion-navbar.toolbar {
 
 .text-black {
   color: #000 !important;
+}
+
+.text-danger {
+  color: #ff3434 !important;
 }
 
 .back-primary {
@@ -25876,4 +25884,30 @@ page-dashboard .segment-md .segment-button.segment-activated {
 page-dashboard .search-bar {
   width: 70% !important;
   margin-left: 20% !important;
+}
+
+page-dashboard .list-md {
+  margin: 0px !important;
+}
+
+page-dashboard .responsive-contact-text {
+  width: 55% !important;
+}
+
+page-dashboard .center-align {
+  left: 50% !important;
+  margin-left: 12% !important;
+  margin-right: 12% !important;
+}
+
+page-dashboard .contact-us-background {
+  margin-top: 50px !important;
+  border: 1px #e4be22 solid;
+  border-radius: 5px;
+  padding: 10px !important;
+  color: #3f3e3e !important;
+}
+
+page-dashboard .toolbar-title-md {
+  padding: 0px !important;
 }

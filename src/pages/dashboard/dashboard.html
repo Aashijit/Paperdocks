@@ -10,7 +10,7 @@
     </ion-title>
     <ion-buttons end>
       <button ion-button icon-only>
-        <img src="../../assets/imgs/shopping-bag.svg" style="height: 80% !important; margin-right: 5px !important;" />
+        <img src="../../assets/imgs/shopping-bag.svg" style="height: 75% !important" />
       </button>
       <button ion-button icon-only>
         <img src="../../assets/imgs/search.svg" style="height: 85% !important" />
@@ -175,42 +175,18 @@
           </ion-card>
         </ion-col>
       </ion-row>
-      <!-- Grid Endss -->
+      <!-- Grid Ends -->
 
-
+      <!-- Footer Starts-->
+      <ion-grid class="back-primary">
+        <ion-note class="text-black fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
+      </ion-grid>
+      <!-- Footer Ends-->
     </ion-list>
     <ion-list *ngSwitchCase="'cards'">
 
       <ion-row>
         <ion-col>
-<<<<<<< HEAD
-      <ion-item>
-        <ion-label class="font-poirot" floating>Browse By</ion-label>
-        <ion-select  [selectOptions]="browseBy"> 
-          <ion-option value="c1" class="font-poirot">Category 1</ion-option>
-          <ion-option value="c2" class="font-poirot">Category 2</ion-option>
-          <ion-option value="c3" class="font-poirot">Category 3</ion-option>
-          <ion-option value="c4" class="font-poirot">Category 4</ion-option>
-          <ion-option value="c5" class="font-poirot">Category 5</ion-option>
-        </ion-select>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-        <ion-item>
-          <ion-label class="font-poirot" floating>Sort By</ion-label>
-          <ion-select [selectOptions]="browseBy"> 
-            <ion-option value="sbn" class="font-poirot">Sort by name</ion-option>
-            <ion-option value="sbp" class="font-poirot">Sort by price</ion-option>
-          </ion-select>
-        </ion-item>
-      </ion-col>
-    </ion-row> 
-
-    
-      
-
- 
-=======
           <ion-item>
             <ion-label class="font-poirot" floating>Browse By</ion-label>
             <ion-select [selectOptions]="browseBy">
@@ -233,25 +209,137 @@
         </ion-col>
       </ion-row>
 
+      <ion-row>
+        <ion-col class="image-container">
+          <ion-card>
+            <img src="../../assets/imgs/no-image.png" />
+            <ion-card-header>
+              <ion-title class="font-poirot">Valentine's Day Card</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-note class="mt-20 text-justify">
+                Make those colourless walls speak out to your family,friends and relatives
+              </ion-note>
+              <br />
+              <button ion-button clear class="captalize font-poirot">Rs 120 /-</button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col class="image-container">
+          <ion-card>
+            <img src="../../assets/imgs/no-image.png" />
+            <ion-card-header>
+              <ion-title class="font-poirot">I love you Card</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-note class="mt-20 text-justify">
+                Make those colourless walls speak out to your family,friends and relatives
+              </ion-note>
+              <br />
+              <button ion-button clear class="captalize font-poirot">Rs 120 /-</button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
 
 
->>>>>>> de4c624e43f504212a05e3808800120cf48a3bc8
+        <!-- Footer Starts-->
+        <ion-grid class="back-primary">
+          <ion-note class="text-black fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
+        </ion-grid>
+        <!-- Footer Ends-->
 
 
+      </ion-row>
 
     </ion-list>
     <ion-list *ngSwitchCase="'posters'">
-      Posters
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label class="font-poirot" floating>Browse By</ion-label>
+            <ion-select [selectOptions]="browseBy">
+              <ion-option value="c1" class="font-poirot">Category 1</ion-option>
+              <ion-option value="c2" class="font-poirot">Category 2</ion-option>
+              <ion-option value="c3" class="font-poirot">Category 3</ion-option>
+              <ion-option value="c4" class="font-poirot">Category 4</ion-option>
+              <ion-option value="c5" class="font-poirot">Category 5</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label class="font-poirot" floating>Sort By</ion-label>
+            <ion-select [selectOptions]="browseBy">
+              <ion-option value="sbn" class="font-poirot">Sort by name</ion-option>
+              <ion-option value="sbp" class="font-poirot">Sort by price</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="image-container">
+          <ion-card>
+            <img src="../../assets/imgs/no-image.png" />
+            <ion-card-header>
+              <ion-title class="font-poirot">Valentine's Day Card</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-note class="mt-20 text-justify">
+                Make those colourless walls speak out to your family,friends and relatives
+              </ion-note>
+              <br />
+              <button ion-button clear class="captalize font-poirot">Rs 120 /-</button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col class="image-container">
+          <ion-card>
+            <img src="../../assets/imgs/no-image.png" />
+            <ion-card-header>
+              <ion-title class="font-poirot">I love you Card</ion-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-note class="mt-20 text-justify">
+                Make those colourless walls speak out to your family,friends and relatives
+              </ion-note>
+              <br />
+              <button ion-button clear class="captalize font-poirot">Rs 120 /-</button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+
+        <!-- Footer Starts-->
+        <ion-grid class="back-primary">
+          <ion-note class="text-black fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
+        </ion-grid>
+        <!-- Footer Ends-->
+      </ion-row>
     </ion-list>
 
-    <ion-list *ngSwitchCase="'contactus'">
-      Contact Us
+    <ion-list *ngSwitchCase="'contactus'" class="center-align contact-us-background">
+      <ion-item>
+        <ion-label floating class="font-poirot">Your Name <sup class="text-danger">*</sup></ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating class="font-poirot">Your Email <sup class="text-danger">*</sup></ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating class="font-poirot">Your Mobile Number <sup class="text-danger">*</sup></ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating class="font-poirot">Your Message <sup class="text-danger">*</sup></ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+      <button ion-button round full class="back-primary" style="margin-top: 20px !important">Send Message</button>
     </ion-list>
   </div>
 </ion-content>
-
 <ion-footer>
-
-
-
 </ion-footer>
