@@ -25,4 +25,9 @@ export class DashboardPage {
     console.log('ionViewDidLoad DashboardPage');
   }
 
+
+  buyCard(){
+    this.navCtrl.push('CardDetailsPage');
+  }
+
 }

@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons left>
+      <button ion-button clear (click)="goBack()">
+          <ion-icon name="arrow-round-back" ></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title class="font-poirot fw-800">
+      Paperdocks
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <img src="../../assets/imgs/shopping-bag.svg" style="height: 75% !important" />
+      </button>
+      <button ion-button icon-only>
+        <img src="../../assets/imgs/search.svg" style="height: 85% !important" />
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Grid Starts-->
+  <ion-grid>
+    <ion-row>
+      <ion-col class="container">
+        <ion-card>
+          <img src="../../assets/imgs/no-image.png" />
+        </ion-card>
+      </ion-col>
+      <ion-col>
+          <ion-list style="margin-left:5% !important">
+            <h1 class="font-poirot"><strong>Thank You Card</strong></h1>
+            <h2 class="font-poirot">Rs 120</h2>
+            <h3 class="font-poirot">Quantity: 1</h3> 
+            <ion-note class="font-poirot text-primary">
+              <strong>A thank you card for that person who who’s been the most awesome
+              person in your life! The card is empty on the inside which gives you
+              enough space to pour your heart out!</strong>
+            </ion-note>
+
+            <ion-label class="font-poirot">Size: A6: <strong>4.1" x 5.8"</strong></ion-label>
+            <ion-label class="font-poirot">Paper Type: <strong>Lightly textured</strong></ion-label>
+            <ion-label class="font-poirot">Paper Weight: <strong>300 GSM</strong></ion-label>
+            <ion-label class="font-poirot">Shipping: <strong>7-10 days</strong></ion-label>
+
+            <h4 class="font-poirot">Question & Answers</h4>
+
+            <ion-grid class="back-primary-light">
+              <ion-row>
+                <ion-col style="margin-top:1.5% !important">
+                  <ion-note class="font-poirot text-black">Have a question about this product? Post it here</ion-note>
+                </ion-col>
+                <ion-col>
+                    <button ion-button full class="font-poirot back-primary text-black">Ask a question</button>
+                  </ion-col>
+              </ion-row>
+            </ion-grid>
+
+          </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--Grid Ends-->
+
+
+</ion-content>

@@ -25787,6 +25787,10 @@ ion-navbar.toolbar {
   background: #e3bd21 !important;
 }
 
+.back-primary-light {
+  background: #ffeb9c !important;
+}
+
 .back-info {
   background: #3f3e3e !important;
 }
@@ -25862,6 +25866,14 @@ ion-navbar.toolbar {
 .image-container {
   min-width: 320px !important;
   max-width: 350px !important;
+  background-size: cover;
+}
+
+page-card-details .container {
+  min-width: 330px !important;
+  min-height: 250px !important;
+  max-width: 550px !important;
+  max-height: 550px !important;
   background-size: cover;
 }
 
