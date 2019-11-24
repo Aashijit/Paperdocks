@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-buttons left>
       <button ion-button clear (click)="goBack()">
-          <ion-icon name="arrow-round-back" ></ion-icon>
+        <ion-icon name="arrow-round-back"></ion-icon>
       </button>
     </ion-buttons>
     <ion-title class="font-poirot fw-800">
@@ -19,49 +19,136 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
+    
   <!--Grid Starts-->
   <ion-grid>
     <ion-row>
       <ion-col class="container">
-        <ion-card>
-          <img src="../../assets/imgs/no-image.png" />
-        </ion-card>
+        <ion-row>
+          <ion-card>
+            <img src="../../assets/imgs/no-image.png" />
+          </ion-card>
+        </ion-row>
+        <!--More Images of this Product-->
+        <ion-row>
+          <ion-col>
+            <ion-card>
+              <img src="../../assets/imgs/no-image.png" />
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <img src="../../assets/imgs/no-image.png" />
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card>
+              <img src="../../assets/imgs/no-image.png" />
+            </ion-card>
+          </ion-col>
+          <ion-col>
+              <ion-card>
+                <img src="../../assets/imgs/no-image.png" />
+              </ion-card>
+            </ion-col>
+        </ion-row>
+        <!--More Images of this Product-->
       </ion-col>
       <ion-col>
-          <ion-list style="margin-left:5% !important">
-            <h1 class="font-poirot"><strong>Thank You Card</strong></h1>
-            <h2 class="font-poirot">Rs 120</h2>
-            <h3 class="font-poirot">Quantity: 1</h3> 
-            <ion-note class="font-poirot text-primary">
-              <strong>A thank you card for that person who who’s been the most awesome
+        <ion-list style="margin-left:5% !important">
+          <h1 class="font-poirot"><strong>Thank You Card</strong></h1>
+          <ion-note class="font-poirot text-primary font-12">
+            <strong>A thank you card for that person who who’s been the most awesome
               person in your life! The card is empty on the inside which gives you
               enough space to pour your heart out!</strong>
-            </ion-note>
+          </ion-note>
+          <h2 class="font-poirot">Rs 120</h2>
+          <h3 class="font-poirot">Quantity: 1</h3>
+          
 
-            <ion-label class="font-poirot">Size: A6: <strong>4.1" x 5.8"</strong></ion-label>
-            <ion-label class="font-poirot">Paper Type: <strong>Lightly textured</strong></ion-label>
-            <ion-label class="font-poirot">Paper Weight: <strong>300 GSM</strong></ion-label>
-            <ion-label class="font-poirot">Shipping: <strong>7-10 days</strong></ion-label>
+          <ion-row>
+            <ion-col class="button-container"><button ion-button full round  class="font-poirot back-primary text-black captalize font-18">Order Now</button></ion-col>
+            <ion-col class="button-container"><button ion-button full round class="font-poirot back-primary text-black captalize font-18">Add to Cart</button></ion-col>
+          </ion-row>
+          
 
-            <h4 class="font-poirot">Question & Answers</h4>
+          <ion-label class="font-poirot">Size: A6: <strong>4.1" x 5.8"</strong></ion-label>
+          <ion-label class="font-poirot">Paper Type: <strong>Lightly textured</strong></ion-label>
+          <ion-label class="font-poirot">Paper Weight: <strong>300 GSM</strong></ion-label>
+          <ion-label class="font-poirot">Shipping: <strong>7-10 days</strong></ion-label>
 
-            <ion-grid class="back-primary-light">
-              <ion-row>
-                <ion-col style="margin-top:1.5% !important">
-                  <ion-note class="font-poirot text-black">Have a question about this product? Post it here</ion-note>
-                </ion-col>
-                <ion-col>
-                    <button ion-button full class="font-poirot back-primary text-black">Ask a question</button>
-                  </ion-col>
-              </ion-row>
-            </ion-grid>
+          <h4 class="font-poirot"><strong>Question & Answers</strong></h4>
 
-          </ion-list>
+          <ion-grid>
+            <ion-row>
+              <ion-col style="margin-top:1.5% !important">
+                <ion-note class="font-poirot text-black">Have a question about this product? Post it here</ion-note>
+              </ion-col>
+              <ion-col>
+                <button ion-button full round class="font-poirot back-primary text-black">Ask a question</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          <h4 class="font-poirot mb-0">Share this product</h4>
+          <ion-row>
+            <ion-col col-1 class="nopadding"><button ion-button clear class="nopadding"><img
+                  src="../../assets/imgs/facebook.svg" style="width:20px !important" /></button></ion-col>
+            <ion-col col-1 class="nopadding"><button ion-button clear class="nopadding"><img
+                  src="../../assets/imgs/instagram.svg" style="width:20px !important" /></button></ion-col>
+            <ion-col col-1 class="nopadding"><button ion-button clear class="nopadding"><img
+                  src="../../assets/imgs/whatsapp.svg" style="width:20px !important" /></button></ion-col>
+          </ion-row>
+        </ion-list>
       </ion-col>
     </ion-row>
   </ion-grid>
   <!--Grid Ends-->
+<!-- 7607003243 -->
+  <!--More from this section-->
+  <h2 class="font-poirot mlp-5 mt-0"><strong>More from this collection</strong></h2>
+  <ion-row>  
+    <ion-col class="more-container">
+      <ion-card>
+        <img src="../../assets/imgs/no-image.png" />
+        <ion-card-title class="font-poirot text-center">Thank You Card</ion-card-title>
+        <ion-card-content class="font-poirot text-center nopadding">Rs 135</ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col class="more-container">
+      <ion-card>
+        <img src="../../assets/imgs/no-image.png" />
+        <ion-card-title class="font-poirot text-center">I hate You Card</ion-card-title>
+        <ion-card-content class="font-poirot text-center nopadding">Rs 105</ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col class="more-container">
+      <ion-card>
+        <img src="../../assets/imgs/no-image.png" />
+        <ion-card-title class="font-poirot text-center">I Miss You Card</ion-card-title>
+        <ion-card-content class="font-poirot text-center nopadding">Rs 135</ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col class="more-container">
+      <ion-card>
+        <img src="../../assets/imgs/no-image.png" />
+        <ion-card-title class="font-poirot text-center">Get Well Soon Card</ion-card-title>
+        <ion-card-content class="font-poirot text-center nopadding">Rs 135</ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+<!--More from this section-->
 
+<ion-grid class="back-primary-light">
+<!-- <button ion-button full round class="font-poirot back-primary text-black">For orders in bulk</button> -->
+<ion-note class="text-black fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
+</ion-grid>
 
 </ion-content>
+
+<!-- <ion-footer text-center no-border transparent>
+      <button ion-button  outline class="font-poirot back-primary-light">Order Now</button>
+      <button ion-button outline class="font-poirot back-primary-light">Add to Cart</button>
+</ion-footer> -->

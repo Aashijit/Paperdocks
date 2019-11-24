@@ -7,6 +7,31 @@ page-card-details {
         max-height: 550px !important;
         background-size: cover;
     }
+
+
+    .more-container {
+        min-width: 330px !important;
+        max-width:350px !important;
+        background-size: cover;
+        text-align: center !important;
+    }
+
+    .button-container {
+        min-width: 100px !important;
+        max-width:200px !important;
+        background-size: cover;
+    }
+
     
+
+    .scroll-content {
+        margin-bottom: 0!important;
+      }
+
+
+      .buy-order-button{
+          margin-left:15% !important;
+          margin-right:15% !important;
+      }
 
 }

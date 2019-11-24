@@ -1,4 +1,4 @@
-webpackJsonp([2],{
+webpackJsonp([3],{
 
 /***/ 108:
 /***/ (function(module, exports) {
@@ -23,10 +23,14 @@ webpackEmptyAsyncContext.id = 108;
 var map = {
 	"../pages/card-details/card-details.module": [
 		267,
-		1
+		2
 	],
 	"../pages/dashboard/dashboard.module": [
 		268,
+		1
+	],
+	"../pages/shopping-cart/shopping-cart.module": [
+		269,
 		0
 	]
 };
@@ -96,7 +100,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/card-details/card-details.module#CardDetailsPageModule', name: 'CardDetailsPage', segment: 'card-details', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/shopping-cart/shopping-cart.module#ShoppingCartPageModule', name: 'ShoppingCartPage', segment: 'shopping-cart', priority: 'low', defaultHistory: [] }
                     ]
                 }),
             ],
