@@ -1,23 +1,42 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons left>
-      <button ion-button clear (click)="goBack()">
-        <ion-icon name="arrow-round-back"></ion-icon>
-      </button>
-    </ion-buttons>
-    <ion-title class="font-poirot fw-800">
-      Paperdocks
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only>
-        <img src="../../assets/imgs/shopping-bag.svg" style="height: 75% !important" />
-      </button>
-      <button ion-button icon-only>
-        <img src="../../assets/imgs/search.svg" style="height: 85% !important" />
-      </button>
-    </ion-buttons>
-</ion-header>
+    <ion-toolbar>
+      <ion-buttons left>
+        <button ion-button clear (click)="goBack()">
+          <ion-icon name="arrow-round-back"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title class="font-poirot fw-800">
+        Paperdocks
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only>
+          <img src="../../assets/imgs/shopping-bag.svg" style="height: 75% !important" />
+        </button>
+        <button ion-button icon-only>
+          <img src="../../assets/imgs/search.svg" style="height: 85% !important" />
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
 
-<ion-content padding>
+<ion-content>
+  <h1 class="font-poirot">Your Cart</h1>
+
+  <!--Grid Starts-->
+  <ion-grid>
+    <ion-row>
+      <ion-col class="container">
+        <ion-card>
+          <img src="../../assets/imgs/no-image.png" />
+        </ion-card>
+      </ion-col>
+      <ion-col class="container">
+        <ion-title class="font-poirot">Thank You Card</ion-title>
+        <ion-note class="font-poirot">Rs 120</ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--Grid Ends-->
 
 </ion-content>
