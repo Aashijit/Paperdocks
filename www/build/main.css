@@ -25997,6 +25997,19 @@ page-dashboard .toolbar-title-md {
   padding: 0px !important;
 }
 
+page-dashboard .margin-left-right {
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+}
+
+page-dashboard .input-box {
+  background: #fff !important;
+  border-radius: 2px !important;
+  color: #3f3e3e !important;
+  min-width: 200px !important;
+  max-width: 300px !important;
+}
+
 page-shopping-cart .container {
   min-width: 200px !important;
   max-width: 350px !important;
