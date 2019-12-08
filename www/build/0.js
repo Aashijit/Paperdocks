@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 269:
+/***/ 268:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShoppingCartPageModule", function() { return ShoppingCartPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shopping_cart__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shopping_cart__ = __webpack_require__(271);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var ShoppingCartPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 272:
+/***/ 271:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69,7 +69,7 @@ var ShoppingCartPage = /** @class */ (function () {
     };
     ShoppingCartPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-shopping-cart',template:/*ion-inline-start:"C:\Users\edot3\Desktop\Paperdocks\Paperdocks\src\pages\shopping-cart\shopping-cart.html"*/'<ion-header>\n\n    <ion-toolbar>\n\n      <ion-buttons left>\n\n        <button ion-button clear (click)="goBack()">\n\n          <ion-icon name="arrow-round-back"></ion-icon>\n\n        </button>\n\n      </ion-buttons>\n\n      <ion-title class="font-poirot fw-800">\n\n        Paperdocks\n\n      </ion-title>\n\n      <ion-buttons end>\n\n        <button ion-button icon-only>\n\n          <img src="../../assets/imgs/shopping-bag.svg" style="height: 75% !important" />\n\n        </button>\n\n        <button ion-button icon-only>\n\n          <img src="../../assets/imgs/search.svg" style="height: 85% !important" />\n\n        </button>\n\n      </ion-buttons>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n  \n\n\n\n<ion-content>\n\n  <!-- <h1 class="font-poirot mlp-5">Your Cart</h1> -->\n\n\n\n  <!--Grid Starts-->\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col class="container">\n\n        <ion-card>\n\n          <img src="../../assets/imgs/no-image.png" />\n\n        </ion-card>\n\n      </ion-col>\n\n      <ion-col class="container pt-20">\n\n        <h1 class="font-poirot font-30 mlp-5 nomargin"><strong>Thank You Card</strong></h1>\n\n        <button ion-button clear class="font-poirot text-info captalize">Remove</button>\n\n      </ion-col>\n\n      <ion-col class="container pt-20">\n\n          <ion-note class="font-poirot font-30 mlp-5"><strong>Rs 120</strong></ion-note>\n\n      </ion-col>\n\n      <ion-col class="container pt-20">\n\n          <ion-badge class="font-poirot font-18 mlp-5">Quantity: 1</ion-badge>\n\n      </ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n  <!--Grid Ends-->\n\n\n\n</ion-content>'/*ion-inline-end:"C:\Users\edot3\Desktop\Paperdocks\Paperdocks\src\pages\shopping-cart\shopping-cart.html"*/,
+            selector: 'page-shopping-cart',template:/*ion-inline-start:"/home/aashijit/Paperdocks/src/pages/shopping-cart/shopping-cart.html"*/'<ion-header>\n    <ion-toolbar>\n      <ion-buttons left>\n        <button ion-button clear (click)="goBack()">\n          <ion-icon name="arrow-round-back"></ion-icon>\n        </button>\n      </ion-buttons>\n      <ion-title class="font-poirot fw-800">\n        Paperdocks\n      </ion-title>\n      <ion-buttons end>\n        <button ion-button icon-only>\n          <img src="../../assets/imgs/shopping-bag.svg" style="height: 75% !important" />\n        </button>\n        <button ion-button icon-only>\n          <img src="../../assets/imgs/search.svg" style="height: 85% !important" />\n        </button>\n      </ion-buttons>\n    </ion-toolbar>\n  </ion-header>\n  \n\n<ion-content>\n  <!-- <h1 class="font-poirot mlp-5">Your Cart</h1> -->\n\n  <!--Grid Starts-->\n  <ion-grid>\n    <ion-row>\n      <ion-col class="container">\n        <ion-card>\n          <img src="../../assets/imgs/no-image.png" />\n        </ion-card>\n      </ion-col>\n      <ion-col class="container pt-20">\n        <h1 class="font-poirot font-30 mlp-5 nomargin"><strong>Thank You Card</strong></h1>\n        <button ion-button clear class="font-poirot text-info captalize">Remove</button>\n      </ion-col>\n      <ion-col class="container pt-20">\n          <ion-note class="font-poirot font-30 mlp-5"><strong>Rs 120</strong></ion-note>\n      </ion-col>\n      <ion-col class="container pt-20">\n          <ion-badge class="font-poirot font-18 mlp-5">Quantity: 1</ion-badge>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n  <!--Grid Ends-->\n\n</ion-content>'/*ion-inline-end:"/home/aashijit/Paperdocks/src/pages/shopping-cart/shopping-cart.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], ShoppingCartPage);
