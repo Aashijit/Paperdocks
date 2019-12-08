@@ -7,7 +7,7 @@
 
   <ion-content>
     <ion-list>
-      <button ion-item menuClose><img src="../assets/imgs/home.svg" style="height:20px!important" />
+      <button ion-item menuClose (click)="goToDashboard()"><img src="../assets/imgs/home.svg" style="height:20px!important" />
         <ion-note style="margin-left: 15%;
         font-size: 20px;" class="font-poirot text-black">Dashboard</ion-note>
       </button>
@@ -27,7 +27,7 @@
         <ion-note style="margin-left: 15%;
           font-size: 20px;" class="font-poirot text-black">About Us</ion-note>
       </button>
-      <button ion-item menuClose><img src="../assets/imgs/digital-marketing.svg" style="height:20px!important" />
+      <button ion-item menuClose (click)="goToBlog()"><img src="../assets/imgs/digital-marketing.svg" style="height:20px!important" />
         <ion-note style="margin-left: 15%;
           font-size: 20px;" class="font-poirot text-black">Blog</ion-note>
       </button>

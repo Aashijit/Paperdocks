@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SafeHtmlPipe } from '../pipes/safe-html/safe-html';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
   ],
   providers: [
     StatusBar,

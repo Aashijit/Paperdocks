@@ -48,7 +48,7 @@
       <!--Banner ends-->
 
       <!-- Label starts-->
-      <ion-title class="font-poirot mt-10">Shop for</ion-title>
+      <ion-title class="font-poirot mt-10 pd-10">Shop for</ion-title>
       <!-- Label ends-->
 
 
@@ -178,10 +178,11 @@
       <!-- Grid Ends -->
 
       <!-- Footer Starts-->
-      <ion-grid class="back-primary-light">
-        <ion-label class="text-black fw-800 font-poirot text-center text-capitalize">Get in touch for customised products or services</ion-label>
+      <ion-grid class="back-primary-light footer-tab">
+        <ion-label class="text-black fw-800 font-poirot text-center text-capitalize">Get in touch for customised
+          products or services</ion-label>
         <button ion-button round class="text-capitalize back-primary margin-left-right">Let's work together</button>
-        
+
         <ion-row class="font-poirot">
           <ion-col>
             <ion-title>Paper Docks</ion-title>
@@ -191,16 +192,19 @@
             <ion-label>Terms & Conditions</ion-label>
           </ion-col>
           <ion-col>
-              <ion-title>Connect</ion-title>
-              <button ion-button clear><img src="../../assets/imgs/facebook.svg"/></button>
-              <button ion-button clear><img src="../../assets/imgs/instagram.svg"/></button>
-              <button ion-button clear><img src="../../assets/imgs/whatsapp.svg"/></button>
+            <ion-title>Connect</ion-title>
+            <button ion-button clear class="nopadding"><img src="../../assets/imgs/facebook.svg"
+                class="social-icons" /></button>
+            <button ion-button clear class="nopadding"><img src="../../assets/imgs/instagram.svg"
+                class="social-icons" /></button>
+            <button ion-button clear class="nopadding"><img src="../../assets/imgs/whatsapp.svg"
+                class="social-icons" /></button>
           </ion-col>
           <ion-col>
             <ion-title>Newsletter</ion-title>
             <ion-label>Sign up for updates, freebies and more</ion-label>
             <ion-input placeholder="Email Id" class="input-box"></ion-input>
-            <button ion-button round class="back-primary mt-10">Subscribe</button>
+            <button ion-button round class="back-primary mt-10"><strong>Subscribe</strong></button>
           </ion-col>
         </ion-row>
 
@@ -268,10 +272,40 @@
 
 
         <!-- Footer Starts-->
-        <ion-grid class="back-primary">
-          <ion-note class="text-black fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
+        <ion-grid class="back-primary-light footer-tab">
+          <ion-label class="text-black fw-800 font-poirot text-center text-capitalize">Get in touch for customised
+            products or services</ion-label>
+          <button ion-button round class="text-capitalize back-primary margin-left-right">Let's work together</button>
+
+          <ion-row class="font-poirot">
+            <ion-col>
+              <ion-title>Paper Docks</ion-title>
+              <ion-label>About</ion-label>
+              <ion-label>FAQ's</ion-label>
+              <ion-label>Contact</ion-label>
+              <ion-label>Terms & Conditions</ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-title>Connect</ion-title>
+              <button ion-button clear class="nopadding"><img src="../../assets/imgs/facebook.svg"
+                  class="social-icons" /></button>
+              <button ion-button clear class="nopadding"><img src="../../assets/imgs/instagram.svg"
+                  class="social-icons" /></button>
+              <button ion-button clear class="nopadding"><img src="../../assets/imgs/whatsapp.svg"
+                  class="social-icons" /></button>
+            </ion-col>
+            <ion-col>
+              <ion-title>Newsletter</ion-title>
+              <ion-label>Sign up for updates, freebies and more</ion-label>
+              <ion-input placeholder="Email Id" class="input-box"></ion-input>
+              <button ion-button round class="back-primary mt-10"><strong>Subscribe</strong></button>
+            </ion-col>
+          </ion-row>
+
+          <ion-note class="fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
         </ion-grid>
         <!-- Footer Ends-->
+
 
 
       </ion-row>
@@ -336,33 +370,101 @@
 
 
         <!-- Footer Starts-->
-        <ion-grid class="back-primary">
-          <ion-note class="text-black fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
+        <ion-grid class="back-primary-light footer-tab">
+          <ion-label class="text-black fw-800 font-poirot text-center text-capitalize">Get in touch for customised
+            products or services</ion-label>
+          <button ion-button round class="text-capitalize back-primary margin-left-right">Let's work together</button>
+
+          <ion-row class="font-poirot">
+            <ion-col>
+              <ion-title>Paper Docks</ion-title>
+              <ion-label>About</ion-label>
+              <ion-label>FAQ's</ion-label>
+              <ion-label>Contact</ion-label>
+              <ion-label>Terms & Conditions</ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-title>Connect</ion-title>
+              <button ion-button clear class="nopadding"><img src="../../assets/imgs/facebook.svg"
+                  class="social-icons" /></button>
+              <button ion-button clear class="nopadding"><img src="../../assets/imgs/instagram.svg"
+                  class="social-icons" /></button>
+              <button ion-button clear class="nopadding"><img src="../../assets/imgs/whatsapp.svg"
+                  class="social-icons" /></button>
+            </ion-col>
+            <ion-col>
+              <ion-title>Newsletter</ion-title>
+              <ion-label>Sign up for updates, freebies and more</ion-label>
+              <ion-input placeholder="Email Id" class="input-box"></ion-input>
+              <button ion-button round class="back-primary mt-10"><strong>Subscribe</strong></button>
+            </ion-col>
+          </ion-row>
+
+          <ion-note class="fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
         </ion-grid>
         <!-- Footer Ends-->
+
       </ion-row>
     </ion-list>
 
-    <ion-list *ngSwitchCase="'contactus'" class="center-align contact-us-background">
-      <ion-item>
-        <ion-label floating class="font-poirot">Your Name <sup class="text-danger">*</sup></ion-label>
-        <ion-input></ion-input>
-      </ion-item>
+    <ion-list *ngSwitchCase="'contactus'">
+      <div class="center-align contact-us-background">
+        <ion-item>
+          <ion-label floating class="font-poirot">Your Name <sup class="text-danger">*</sup></ion-label>
+          <ion-input></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label floating class="font-poirot">Your Email <sup class="text-danger">*</sup></ion-label>
-        <ion-input></ion-input>
-      </ion-item>
+        <ion-item>
+          <ion-label floating class="font-poirot">Your Email <sup class="text-danger">*</sup></ion-label>
+          <ion-input></ion-input>
+        </ion-item>
 
-      <ion-item>
-        <ion-label floating class="font-poirot">Your Mobile Number <sup class="text-danger">*</sup></ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label floating class="font-poirot">Your Message <sup class="text-danger">*</sup></ion-label>
-        <ion-textarea></ion-textarea>
-      </ion-item>
-      <button ion-button round full class="back-primary" style="margin-top: 20px !important">Send Message</button>
+        <ion-item>
+          <ion-label floating class="font-poirot">Your Mobile Number <sup class="text-danger">*</sup></ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating class="font-poirot">Your Message <sup class="text-danger">*</sup></ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+        <button ion-button full round class="back-primary" style="margin-top: 20px !important;">Send Message</button>
+
+      </div>
+
+      <!-- Footer Starts-->
+      <ion-grid class="back-primary-light footer-tab">
+        <ion-label class="text-black fw-800 font-poirot text-center text-capitalize">Get in touch for customised
+          products or services</ion-label>
+        <button ion-button round class="text-capitalize back-primary margin-left-right">Let's work together</button>
+
+        <ion-row class="font-poirot">
+          <ion-col>
+            <ion-title>Paper Docks</ion-title>
+            <ion-label>About</ion-label>
+            <ion-label>FAQ's</ion-label>
+            <ion-label>Contact</ion-label>
+            <ion-label>Terms & Conditions</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-title>Connect</ion-title>
+            <button ion-button clear class="nopadding"><img src="../../assets/imgs/facebook.svg"
+                class="social-icons" /></button>
+            <button ion-button clear class="nopadding"><img src="../../assets/imgs/instagram.svg"
+                class="social-icons" /></button>
+            <button ion-button clear class="nopadding"><img src="../../assets/imgs/whatsapp.svg"
+                class="social-icons" /></button>
+          </ion-col>
+          <ion-col>
+            <ion-title>Newsletter</ion-title>
+            <ion-label>Sign up for updates, freebies and more</ion-label>
+            <ion-input placeholder="Email Id" class="input-box"></ion-input>
+            <button ion-button round class="back-primary mt-10"><strong>Subscribe</strong></button>
+          </ion-col>
+        </ion-row>
+
+        <ion-note class="fw-800 font-poirot text-center">&copy; Paperdocks @ 2019</ion-note>
+      </ion-grid>
+      <!-- Footer Ends-->
     </ion-list>
   </div>
 </ion-content>
