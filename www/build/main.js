@@ -30,11 +30,11 @@ var map = {
 		4
 	],
 	"../pages/card-details/card-details.module": [
-		269,
+		270,
 		3
 	],
 	"../pages/dashboard/dashboard.module": [
-		270,
+		269,
 		2
 	],
 	"../pages/shopping-cart/shopping-cart.module": [
@@ -109,8 +109,8 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/blog-post/blog-post.module#BlogPostPageModule', name: 'BlogPostPage', segment: 'blog-post', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/blog/blog.module#BlogPageModule', name: 'BlogPage', segment: 'blog', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/card-details/card-details.module#CardDetailsPageModule', name: 'CardDetailsPage', segment: 'card-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/card-details/card-details.module#CardDetailsPageModule', name: 'CardDetailsPage', segment: 'card-details', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/shopping-cart/shopping-cart.module#ShoppingCartPageModule', name: 'ShoppingCartPage', segment: 'shopping-cart', priority: 'low', defaultHistory: [] }
                     ]
                 }),
