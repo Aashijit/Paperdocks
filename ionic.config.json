@@ -1,7 +1,0 @@
-{
-  "name": "Paperdocks",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
