@@ -1,0 +1,119 @@
+2020-04-10 07:46:20 Error: [Cake\Database\Exception\MissingExtensionException] Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency in /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Connection.php on line 178
+Exception Attributes: array (
+  'driver' => 'Cake\\Database\\Driver\\Mysql',
+)
+Stack Trace:
+#0 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Connection.php(119): Cake\Database\Connection->setDriver(Object(Cake\Database\Driver\Mysql), Array)
+#1 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Datasource/ConnectionRegistry.php(88): Cake\Database\Connection->__construct(Array)
+#2 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(96): Cake\Datasource\ConnectionRegistry->_create('Cake\\Database\\C...', 'default', Array)
+#3 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Datasource/ConnectionManager.php(204): Cake\Core\ObjectRegistry->load('Cake\\Database\\C...', Array)
+#4 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(196): Cake\Datasource\ConnectionManager::get('default')
+#5 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableObject('CardBookInfo', 'card_book_info')
+#6 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('CardBookInfo')
+#7 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(531): Bake\Shell\Task\ModelTask->main('CardBookInfo')
+#8 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#9 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#10 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#11 /opt/lampp/htdocs/Paperdocks/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#12 {main}
+
+
+2020-04-10 07:51:28 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver.php on line 92
+Stack Trace:
+#0 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'card_book_info', 'CardBookInfo')
+#12 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('CardBookInfo')
+#13 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(531): Bake\Shell\Task\ModelTask->main('CardBookInfo')
+#14 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 /opt/lampp/htdocs/Paperdocks/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-04-10 08:35:27 Error: [RuntimeException] Unknown command `cake model`. Run `cake --help` to get the list of valid commands. in /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php on line 347
+Stack Trace:
+#0 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(157): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'model')
+#1 /opt/lampp/htdocs/Paperdocks/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+
+2020-04-10 08:35:32 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver.php on line 92
+Stack Trace:
+#0 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1065): Bake\Shell\Task\ModelTask->listAll()
+#10 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(94): Bake\Shell\Task\ModelTask->listUnskipped()
+#11 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(531): Bake\Shell\Task\ModelTask->main()
+#12 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#14 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 /opt/lampp/htdocs/Paperdocks/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2020-04-10 08:35:40 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver.php on line 92
+Stack Trace:
+#0 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'card_book_info', 'CardBookInfo')
+#12 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('CardBookInfo')
+#13 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(531): Bake\Shell\Task\ModelTask->main('CardBookInfo')
+#14 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(524): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#16 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#17 /opt/lampp/htdocs/Paperdocks/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#18 {main}
+
+
+2020-04-10 08:46:50 Error: [PDOException] SQLSTATE[HY000] [2002] No such file or directory in /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver.php on line 92
+Stack Trace:
+#0 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver.php(92): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(105): Cake\Database\Driver->_connect('mysql:host=loca...', Array)
+#2 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/BaseSchema.php(44): Cake\Database\Driver\Mysql->connect()
+#3 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Dialect/MysqlDialectTrait.php(62): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(51): Cake\Database\Driver\Mysql->schemaDialect()
+#5 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(41): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Database/Connection.php(390): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1096): Cake\Database\Connection->getSchemaCollection()
+#8 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(1050): Bake\Shell\Task\ModelTask->_getAllTables()
+#9 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#10 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#11 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'card_book_info', 'CardBookInfo')
+#12 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/Task/ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('CardBookInfo')
+#13 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/BakeShell.php(282): Bake\Shell\Task\ModelTask->main('CardBookInfo')
+#14 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Collection/CollectionTrait.php(64): Bake\Shell\BakeShell->Bake\Shell\{closure}('CardBookInfo', 0)
+#15 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/bake/src/Shell/BakeShell.php(283): Cake\Collection\Collection->each(Object(Closure))
+#16 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/Shell.php(517): Bake\Shell\BakeShell->all('CardBookInfo')
+#17 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(385): Cake\Console\Shell->runCommand(Array, true)
+#18 /opt/lampp/htdocs/Paperdocks/vendor/cakephp/cakephp/src/Console/CommandRunner.php(162): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#19 /opt/lampp/htdocs/Paperdocks/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#20 {main}
+
+
