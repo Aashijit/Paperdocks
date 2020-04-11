@@ -4,7 +4,7 @@
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $cakeDescription ?>
+        Paperdocks | Making love travel ... 
     </title>
 
     <?= $this->Html->meta('icon') ?>
@@ -16,15 +16,9 @@
 
 <body>
     <h1>This is paperdocks home page</h1>
-    <?php 
-    foreach($cardBookInfos as $cardBookInfo){
-?>
-<h2><?= $cardBookInfo->cardId?></h2>
+    
 
 </body>
 
-<?php 
-    }
-?>
 
 </html>

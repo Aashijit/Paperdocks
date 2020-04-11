@@ -8,19 +8,22 @@ use Cake\Log\Log;
 
 class CardBookInfoDao {
 
-    public function CardBookInfoDao(){
+    
+    public function getCardBookInfos(){
 
-    }
-
-    public function getCardBookInfosByCardBookId($cardBookId){
+        Log::debug('Started ...getCardBookInfosByCardBookId');
 
         $conn = ConnectionManager::get('default');
 
-        $sql="SELECT `CARD_ID`, `TAG_ID`, `OCCASSION_ID`, `CATEGORY_ID`, `IS_PRESENT`, `LAST_MAINT_ID`, `LAST_MAINT_TS`, `OPTCOUNTER` FROM `card_book_info` WHERE 1";
+        $sql="SELECT `CARD_ID`, `TAG_ID`, `OCCASSION_ID`, `CATEGORY_ID`, `IS_PRESENT`, `LAST_MAINT_ID`, `LAST_MAINT_TS`, `OPTCOUNTER` FROM `card_book_info`";
+
+        Log::debug('SQL : '.$sql);
+        
         $stmt = $conn->execute($sql);
         $results = $stmt->fetchAll();
 
-        
+
+
         $cardBookInfos = [];
 
         foreach($results as $result){
@@ -36,6 +39,8 @@ class CardBookInfoDao {
             
             array_push($cardBookInfos,$cardBookInfo);
         }
+
+        Log::debug('Ended  ... getCardBookInfosByCardBookId');
 
         return $cardBookInfos;
     }

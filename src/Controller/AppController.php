@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\DAO\CardBookInfoDao;
+use App\DAO\CardInfoDao;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\Log\Log;
@@ -21,12 +22,11 @@ class AppController extends Controller
         $this->loadComponent('Flash');
 
 
-        $cardBookInfoDao = new CardBookInfoDao;
+        $cardInfoDao = new CardInfoDao;
+            
+        $cardInfos = $cardInfoDao->getCardInfos();
 
-        $cardBookInfos= $cardBookInfoDao->getCardBookInfosByCardBookId(1);
+        Log::debug($cardInfos);
 
-        $this->set('cardBookInfos',$cardBookInfos);
-
-        Log::debug($cardBookInfos);
     }
 }
