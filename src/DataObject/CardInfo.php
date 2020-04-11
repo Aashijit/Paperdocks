@@ -18,5 +18,6 @@ class CardInfo {
     public $lastMaintTs;
     public $optCounter;
 
+    public $cardImages=[]; //Card Images
 
 }

@@ -52,3 +52,34 @@
 
 )
 
+2020-04-11 12:04:16 Debug: Started ...getCardInfo
+2020-04-11 12:04:16 Debug: SQL : SELECT `CARD_ID`, `CARD_NAME`, `CARD_DISPLAY_NAME`, `CARD_TAGLINE_TEXT`, 
+        `CARD_DESCRIPTION_TEXT`, `CARD_PRIMARY_DIMENSIONS`, `CARD_PRIMARY_PRICE`, 
+        `CARD_MATERIAL`, `CARD_AVAILABLITY`, `NUMBER_OF_CARDS_AVAILABLE`, 
+        `LAST_MAINT_ID`, `LAST_MAINT_TS`, `OPTCOUNTER` FROM `card_info`
+2020-04-11 12:04:16 Debug: Ended ...getCardInfo
+2020-04-11 12:04:16 Debug: Array
+(
+    [0] => App\DataObject\CardInfo Object
+        (
+            [cardId] => 1
+            [cardName] => Test Card
+            [cardDisplayName] => Test Card to be displayed
+            [cardTaglineText] => Test Card
+            [cardDescriptionText] => Test Card
+            [cardPrimaryDimensions] => 10x20
+            [cardPrimaryPrice] => 100.00
+            [cardMaterial] => Leather
+            [cardAvailability] => 1
+            [numberOfCardsAvailable] => 10
+            [lastMaintId] => paperdocks-ws
+            [lastMaintTs] => 2020-04-10 16:24:22
+            [optCounter] => 0
+            [cardImages] => Array
+                (
+                )
+
+        )
+
+)
+
